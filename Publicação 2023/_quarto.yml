@@ -2,13 +2,6 @@ lang: pt
 
 project:
   type: book
-  resources: 
-    - "govbr/core-init.js"
-    - "govbr/core.min.js"
-    - "govbr/fontawesome/webfonts/fa-solid-900.woff2"
-    - "quarto-search/autocomplete.umd.js"
-    - "quarto-search/fuse.min.js"
-    - "quarto-search/quarto-search.js"
 
 book:
   title: "CENSO SUAS 2023"
@@ -18,13 +11,14 @@ book:
 #    - Secretaria Nacional de Assistência Social
 #    - Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome
 #  date: "21/06/2024"
-  search: false
+#  search: false
   cover-image: "CapaCensoSUAS2023imagem 1.png"
   favicon: "CapaCensoSUAS2023imagem 1.png"
-  repo-url: https://github.com/Sagicad-MDS/Publicacoes-Censo-SUAS
-  repo-branch: master
+  repo-url: https://github.com/Sagicad-MDS/Censo-SUAS-2023
+  repo-branch: main
   repo-subdir: "Publicação 2023"
   repo-actions: [source, issue]
+  repo-link-target: "_blank"
   chapters:
     - index.qmd
     - apresentacao.qmd
@@ -59,24 +53,24 @@ crossref:
 
 format:
   html: 
-    css: 
-      - "govbr/core.min.css"
-      - "govbr/fontawesome/css/fontawesome.min.css"
-      - "govbr/fontawesome/css/solid.min.css"
-    theme: "govbr/gov-br.scss"
+#    css: 
+#      - "govbr/core.min.css"
+#      - "govbr/fontawesome/css/fontawesome.min.css"
+#      - "govbr/fontawesome/css/solid.min.css"
+#    theme: "govbr/gov-br.scss"
     mainfont: "Rawline, Raleway, sans-serif"
     fontsize: 14px
     fontcolor: "#333333"
     linkcolor: "#1351B4"
     linestretch: 1.45
     backgroundcolor: "#ffffff"
-    include-in-header:
-      - text: |
-          <script src="govbr/core-init.js"></script>
-          <script src="govbr/core.min.js"></script>
-      - file: govbr/header.html
-    include-after-body:
-      - file: govbr/footer.html
+#    include-in-header:
+#      - text: |
+#          <script src="govbr/core-init.js"></script>
+#          <script src="govbr/core.min.js"></script>
+#      - file: govbr/header.html
+#    include-after-body:
+#      - file: govbr/footer.html
 #  pdf:
 #    documentclass: scrreprt
 
