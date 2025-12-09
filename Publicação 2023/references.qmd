@@ -4,8 +4,6 @@ source("_setup.R")
 
 # Referências {.unnumbered}
 
-##  {.unnumbered}
-
 \_\_\_\_\_\_. Lei Orgânica de Assistência Social - LOAS. Brasília, DF: MDS, 2011.
 
 \_\_\_\_\_\_. Norma Operacional Básica – NOB. Anotada e Comentada. Brasília, DF: MDS, Secretaria Nacional de Assistência Social, 2011. 144 p.
