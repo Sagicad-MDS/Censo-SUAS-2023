@@ -64,6 +64,8 @@ format:
     linkcolor: "#1351B4"
     linestretch: 1.45
     backgroundcolor: "#ffffff"
+    link-external-icon: true
+    link-external-newwindow: true
 #    include-in-header:
 #      - text: |
 #          <script src="govbr/core-init.js"></script>
