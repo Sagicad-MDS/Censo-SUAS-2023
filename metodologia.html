@@ -248,16 +248,16 @@ Tabela&nbsp;1.1: Histórico de inclusão dos formulários temáticos
 <thead>
 <tr class="header">
 <th class="tg-nlcr" data-quarto-table-cell-role="th"><span style="font-weight:bold;font-style:italic">FORMULÁRIOS</span></th>
-<th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2007</span>-2008</th>
+<th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2007 a 2008</span></th>
 <th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2009</span></th>
 <th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2010</span></th>
 <th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2011</span></th>
-<th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2012</span>-2013</th>
+<th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2012 a 2013</span></th>
 <th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2014</span></th>
-<th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2015-2016</span></th>
+<th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2015 a 2016</span></th>
 <th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2017</span></th>
-<th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2018</span>-2019</th>
-<th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2020</span>-2023</th>
+<th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2018 a 2019</span></th>
+<th class="tg-wp8o" data-quarto-table-cell-role="th"><span style="font-style:italic">2020 a 2023</span></th>
 </tr>
 </thead>
 <tbody>
@@ -677,7 +677,7 @@ th {
 </ul>
 <section id="produção-da-publicação" class="level3" data-number="1.3.1">
 <h3 data-number="1.3.1" class="anchored" data-anchor-id="produção-da-publicação"><span class="header-section-number">1.3.1</span> Produção da publicação</h3>
-<p>A partir da retomada em 2022 desta série anual de publicações sobre o Censo SUAS (após uma pausa a partir de 2018) a publicação passou a ser produzida em “R Markdown” (posteriormente evoluindo para a ferramenta <a href="quarto.org">“Quarto”</a>). Esta inovação teve como objetivo garantir maior consistência dos dados e gráficos produzidos ao longo dos anos, pelo registro exato, na linguagem R, do processo utilizado na geração de cada dado e cada gráfico. Teve como objetivo também facilitar a produção da publicação pela integração do código para geração dos dados e gráficos com os textos, facilitando também a correção de erros e a atualização da publicação.</p>
+<p>A partir da retomada em 2022 desta série anual de publicações sobre o Censo SUAS (após uma pausa a partir de 2018) a publicação passou a ser produzida em “R Markdown” (posteriormente evoluindo para a ferramenta <a href="https://quarto.org/">“Quarto”</a>). Esta inovação teve como objetivo garantir maior consistência dos dados e gráficos produzidos ao longo dos anos, pelo registro exato, na linguagem R, do processo utilizado na geração de cada dado e cada gráfico. Teve como objetivo também facilitar a produção da publicação pela integração do código para geração dos dados e gráficos com os textos, facilitando também a correção de erros e a atualização da publicação.</p>
 <p>A publicação é escrita em arquivos no formato de documento do Quarto (.qmd), que contém texto no formato Markdown mesclado com pedaços de código em R para geração dos dados e gráficos. Cada capítulo da publicação está em um arquivo “.qmd”, e esses arquivos são partes de um projeto que gera a publicação completa, pronta, como você está visualizando.</p>
 <p>Além disso, a publicação do Censo SUAS 2022 foi lançado em uma versão eletrônica publicada online, além da versão impressa tradicional até então. Já esta versão do Censo SUAS 2023 está sendo publicada apenas na versão eletrônica online. Estas publicações eletrônicas no formato HTML são mais adequadas para leitura em telas, pois se ajustam ao tamanho e formato da tela utilizada.</p>
 <p>O formato eletrônico utilizado possibilita também a integração de outras funcionalidades, como o acesso ao código fonte utilizado para geração da publicação, que está disponibilizado em um repositório de acesso público na plataforma GitHub. O ícone do GitHub junto ao título da publicação dá acesso à pasta do repositório que contém todo o código desta publicação. Também é possível acessar diretamente o arquivo específico com o código da página sendo visualizada, pelo “link” embaixo do índice da página (à direita) que diz “Ver o código fonte”.</p>
@@ -776,6 +776,13 @@ th {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
