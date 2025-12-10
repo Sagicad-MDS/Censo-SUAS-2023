@@ -32,16 +32,16 @@ O primeiro formulário do Censo SUAS foi criado em 2007 como uma ficha de regist
 <table class="tg"><thead>
   <tr>
     <th class="tg-nlcr"><span style="font-weight:bold;font-style:italic">FORMULÁRIOS</span></th>
-    <th class="tg-wp8o"><span style="font-style:italic">2007</span>-2008</th>
+    <th class="tg-wp8o"><span style="font-style:italic">2007 a 2008</span></th>
     <th class="tg-wp8o"><span style="font-style:italic">2009</span></th>
     <th class="tg-wp8o"><span style="font-style:italic">2010</span></th>
     <th class="tg-wp8o"><span style="font-style:italic">2011</span></th>
-    <th class="tg-wp8o"><span style="font-style:italic">2012</span>-2013</th>
+    <th class="tg-wp8o"><span style="font-style:italic">2012 a 2013</span></th>
     <th class="tg-wp8o"><span style="font-style:italic">2014</span></th>
-    <th class="tg-wp8o"><span style="font-style:italic">2015-2016</span></th>
+    <th class="tg-wp8o"><span style="font-style:italic">2015 a 2016</span></th>
     <th class="tg-wp8o"><span style="font-style:italic">2017</span></th>
-    <th class="tg-wp8o"><span style="font-style:italic">2018</span>-2019</th>
-    <th class="tg-wp8o"><span style="font-style:italic">2020</span>-2023</th>
+    <th class="tg-wp8o"><span style="font-style:italic">2018 a 2019</span></th>
+    <th class="tg-wp8o"><span style="font-style:italic">2020 a 2023</span></th>
   </tr></thead>
 <tbody>
   <tr>
@@ -439,7 +439,7 @@ Na análise dos resultados do Censo SUAS 2023 compreende-se o SUAS como polític
 
 ### Produção da publicação
 
-A partir da retomada em 2022 desta série anual de publicações sobre o Censo SUAS (após uma pausa a partir de 2018) a publicação passou a ser produzida em "R Markdown" (posteriormente evoluindo para a ferramenta ["Quarto"](quarto.org)). Esta inovação teve como objetivo garantir maior consistência dos dados e gráficos produzidos ao longo dos anos, pelo registro exato, na linguagem R, do processo utilizado na geração de cada dado e cada gráfico. Teve como objetivo também facilitar a produção da publicação pela integração do código para geração dos dados e gráficos com os textos, facilitando também a correção de erros e a atualização da publicação.
+A partir da retomada em 2022 desta série anual de publicações sobre o Censo SUAS (após uma pausa a partir de 2018) a publicação passou a ser produzida em "R Markdown" (posteriormente evoluindo para a ferramenta ["Quarto"](https://quarto.org/)). Esta inovação teve como objetivo garantir maior consistência dos dados e gráficos produzidos ao longo dos anos, pelo registro exato, na linguagem R, do processo utilizado na geração de cada dado e cada gráfico. Teve como objetivo também facilitar a produção da publicação pela integração do código para geração dos dados e gráficos com os textos, facilitando também a correção de erros e a atualização da publicação.
 
 A publicação é escrita em arquivos no formato de documento do Quarto (.qmd), que contém texto no formato Markdown mesclado com pedaços de código em R para geração dos dados e gráficos. Cada capítulo da publicação está em um arquivo ".qmd", e esses arquivos são partes de um projeto que gera a publicação completa, pronta, como você está visualizando.
 
