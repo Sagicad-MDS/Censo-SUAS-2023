@@ -53,8 +53,8 @@ crossref:
 
 format:
   html: 
-#    css: 
-#      - "govbr/core.min.css"
+    css: 
+      - "govbr/core.min.css"
 #      - "govbr/fontawesome/css/fontawesome.min.css"
 #      - "govbr/fontawesome/css/solid.min.css"
 #    theme: "govbr/gov-br.scss"
